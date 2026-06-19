@@ -1,7 +1,9 @@
 # Global KYC & Fraud Risk Analytics #
 
 ## Overview
-This project focuses on detecting fraud patterns and KYC risks using SQL-based analytics on customer, account, and transaction datasets.
+This project analyzes banking datasets (customers, accounts, and transactions) to detect fraud patterns and KYC compliance risks using SQL.
+
+It simulates real-world fraud detection scenarios used in banking and financial institutions.
 
 
 ## Key Features
@@ -12,20 +14,19 @@ This project focuses on detecting fraud patterns and KYC risks using SQL-based a
 - Built a rule-based risk scoring model
 
 
-## Fraud Detection Techniques
-- Structuring detection (smurfing)
-- Behavioural anomaly detection
-- Dormant account monitoring
-- High-value transaction alerts
-
+## Fraud Detection Use Cases
+- Dormant accounts performing transactions
+- Structured transactions (smurfing detection)
+- High-risk customers with large transaction volumes
+- Multi-country transaction patterns
+- Pending KYC customers with high activity
 
 ## Tech Stack
-- SQL (Joins, CTEs, Window Functions)
+- SQL (Joins, Aggregations, CTEs, Window Functions)
 - Data Analysis
 - Fraud Risk Modeling
 
-
-Project Structure 
+**Project Structure **
 
 GLOBAL_KYC_FRAUD_RISK_ANALYTICS/
 │
@@ -33,7 +34,7 @@ GLOBAL_KYC_FRAUD_RISK_ANALYTICS/
 │   ├── customers.csv          -- Customer master data (KYC details)
 │   ├── accounts.csv           -- Account-level details
 │   ├── transactions.csv       -- Transaction-level data
-│	├── risk_flags.csv			 -- Risk Flags
+│	  ├── risk_flags.csv			   -- Risk Flags
 ├── sql/
 │   ├── basic_analysis.sql     -- Basic SQL queries (aggregations, joins)
 │   ├── fraud_detection.sql    -- Fraud detection queries
@@ -47,14 +48,15 @@ GLOBAL_KYC_FRAUD_RISK_ANALYTICS/
 
 
 ## Key Insights
-- High-risk customers often show multi-country transactions
-- Dormant accounts with activity are high fraud indicators
-- Pending KYC + high transaction volume = compliance risk
+- Customers with transactions across multiple countries are potential fraud risks
+- Dormant accounts with activity indicate suspicious behavior
+- High transaction volumes combined with pending KYC represent compliance risks
+
 
 
 ## Learning Outcomes
-- Advanced SQL query design
-- Fraud detection logic implementation
-- Risk scoring techniques
-- Real-world banking use cases
+- Hands-on experience with advanced SQL queries
+- Understanding of fraud detection techniques
+- Implementation of risk scoring logic
+- Real-world banking analytics simulation
 
