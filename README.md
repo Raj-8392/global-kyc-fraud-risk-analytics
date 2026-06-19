@@ -60,3 +60,4 @@ GLOBAL_KYC_FRAUD_RISK_ANALYTICS/
 - Implementation of risk scoring logic
 - Real-world banking analytics simulation
 
+**Author: Nagaraju R**
